@@ -1,0 +1,113 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-image: url(./logo.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-containner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.child{
+       height: 350px;
+    width: 370px;
+    background-color: cornflowerblue; 
+    border-radius: 20px;
+     margin-top: 200px;
+     box-shadow: 
+     0 4px 6px rgba(0, 0, 0, 0.1), 
+     0 1px 3px rgba(0, 0, 0, 0.08), 
+     0 0 15px 4px rgba(72, 207, 173, 0.4), 
+     0 0 30px 8px rgba(255, 105, 180, 0.3); 
+ transition: box-shadow 0.3s ease;
+}
+.child:hover{
+    box-shadow: 
+    0 8px 12px rgba(0, 0, 0, 0.15),
+    0 3px 6px rgba(0, 0, 0, 0.1),
+    0 0 25px 6px rgba(72, 207, 173, 0.6),
+    0 0 40px 12px rgba(255, 105, 180, 0.5);
+transform: scale(1.05); 
+}
+.main-containner :hover{
+    background-color: honeydew;
+}
+.lbl{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    margin-left: 15px;
+    /* gap: 10px; */
+}
+
+#username{
+gap: 10px;
+height: 30px;
+border-radius: 8px;
+width: 220px;
+background-color: aquamarine;
+border: 2px solid black;
+margin-top: 70px;
+cursor: pointer;
+
+}
+#Email {
+    gap: 10px;
+    height: 30px;
+    border-radius: 8px;
+    width: 220px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    margin-left: 45px; 
+    margin-top: 30px;
+    cursor: pointer;
+}
+#pasword{
+    gap: 10px;
+    height: 30px;
+    border-radius: 8px;
+    width: 220px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    margin-left: 20px; 
+    margin-top: 30px;
+    cursor: pointer;
+}
+.btn{
+    width: 130px;
+    height: 35px;
+    border-radius:10px ;
+    margin-left: 120px;
+    margin-top: 25px;
+    font-weight: bold;
+    background-color: rgb(60, 60, 178);
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    background-color: #ff4c4c; 
+            box-shadow: 0 8px 20px rgba(255, 76, 76, 0.5); 
+            transform: scale(1.1); 
+}
+#error{
+    color: orange;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+     margin-top: 10px;
+     text-decoration: underline;
+}
+#username:hover {
+    border: 3px solid blue;
+}
+#Email:hover {
+    border: 3px solid blue;
+}
+#pasword:hover {
+    border: 3px solid blue;
+}
